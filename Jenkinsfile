@@ -4,7 +4,7 @@ pipeline {
 	stages{
 		stage('Checkout Code'){
 			steps{
-				checkout scm
+				git branch: 'master', url: 'https://github.com/devopsaws355/sample-java.git'
 				}
 			}
 	
